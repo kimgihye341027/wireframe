@@ -1,1 +1,128 @@
 @charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li ,ul{
+    color: #333;
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* 전체레이아웃 */
+.container{
+    width: 1200px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: #333;
+}
+/* A B 메인 */
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: violet;
+}
+
+/* A 상단 */
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(252, 6, 6);
+}
+.header .logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: antiquewhite;
+}
+.logo h2{
+    text-align: center;
+}
+.nav{
+    width: calc( 100% - 500px );
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    height: 60px;
+    transform: translatey(-50%);
+    background-color: aquamarine;
+}
+#main-Menu{
+    width: 100%;
+   
+}
+#main-Menu li {
+    width: calc(100% / 4);
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(27, 92, 70);
+}
+#main-Menu li a{
+    line-height: 60px;
+}
+
+/* B 슬라이드 */
+.slide{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 140, 0);
+}
+/* C 콘텐츠 */
+.content{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(225, 255, 2);
+}
+.c1c2{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    background-color: blueviolet;
+}
+.c3{
+    width: calc( 100% / 3 );
+    height: 100%;
+    float: left;
+    background-color: rgb(148, 124, 171);
+}
+.c4{
+    width: calc( 100% / 3 );
+    height: 100%;
+    float: left;
+    background-color: rgb(8, 1, 15);
+}
+
+/* D 하단 */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+}
+.logo1{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: antiquewhite;
+}
+.footer .copyright{
+    width: 800px;
+    height: 100px;
+    float: left;
+    background-color: blue;
+}
+
+.sns{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: antiquewhite;
+}
